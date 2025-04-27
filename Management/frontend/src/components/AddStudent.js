@@ -109,7 +109,7 @@ function AddStudent() {
     setSubmitStatus("");
     try {
       await axios.post(
-        "http://localhost:5000/students",
+        "https://management1-55j2.onrender.com/students",
         {
           studentId: student.studentId,
           firstName: student.firstName,
