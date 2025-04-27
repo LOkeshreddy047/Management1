@@ -27,7 +27,7 @@ function StudentList() {
   const fetchStudents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/students",
+        "https://management1-55j2.onrender.com/students",
         {
           headers: { "x-user-role": userRole },
         }
