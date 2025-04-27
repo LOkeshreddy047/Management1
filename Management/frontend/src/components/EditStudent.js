@@ -21,7 +21,7 @@ function EditStudent() {
     const fetchStudent = async () => {
       try {
         const response = await axios.get(
-          `https://management-q91z.onrender.com/students/${id}`
+          `https://management1-55j2.onrender.com/students/${id}`
         );
         setStudent({
           studentId: response.data.studentId || "",
@@ -90,7 +90,7 @@ function EditStudent() {
     if (!validate()) return;
 
     try {
-      await axios.put(`https://management-q91z.onrender.com/students/${id}`, {
+      await axios.put(`https://https://management1-55j2.onrender.com/students/${id}`, {
         studentId: student.studentId,
         firstName: student.firstName,
         lastName: student.lastName,
