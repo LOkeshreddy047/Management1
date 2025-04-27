@@ -36,7 +36,7 @@ function Register() {
     setSubmitStatus("");
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/register",
+        "https://management1-55j2.onrender.com/auth/register",
         {
           username: registerData.username,
           password: registerData.password,
