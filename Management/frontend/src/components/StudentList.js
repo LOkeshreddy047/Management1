@@ -73,7 +73,7 @@ function StudentList() {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this student?")) {
       try {
-        await axios.delete(`http://localhost:5000/students/${id}`, {
+        await axios.delete(`https://management1-55j2.onrender.com/students/${id}`, {
           headers: { "x-user-role": userRole },
         });
         alert("Student deleted successfully");
